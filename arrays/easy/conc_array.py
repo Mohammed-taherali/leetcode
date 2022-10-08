@@ -1,15 +1,14 @@
+# Problem link: https://leetcode.com/problems/concatenation-of-array/
+
 class Solution:
     def getConcatenation(self, nums: list[int]) -> list[int]:
-        ...
-        ans = nums[:]
-        [ans.append(i) for i in nums]
-        print(ans)
-        return ans
+        
+        # Return nums concatenated to nums.
+        return nums * 2
 
 
-arr = [1,2,4,2,4]
+if __name__ == "__main__":
 
-sol = Solution()
-ans = sol.getConcatenation(arr)
-
-# print(ans)
+    arr = [1,2,4,2,4]
+    sol = Solution()
+    ans = sol.getConcatenation(arr)

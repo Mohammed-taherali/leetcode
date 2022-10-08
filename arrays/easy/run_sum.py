@@ -1,9 +1,12 @@
+# Problem link: https://leetcode.com/problems/running-sum-of-1d-array/
+
 class Solution:
     def runningSum(self, nums: list[int]) -> list[int]:
-        ...
-        run_sum = [sum(nums[:i + 1]) for i in range(len(nums))]
-        print(run_sum)
 
+        # Calculate running sum of array.
+        # running sum for nums[i] is:
+        # running_sum = nums[0] + nums[1] + nums[2] + .... + nums[i]
+        run_sum = [sum(nums[:i + 1]) for i in range(len(nums))]
         return run_sum
 
 
